@@ -1,0 +1,88 @@
+{
+    id: 19101,
+    name: 'igkd01',
+    version: 0,
+    author: 'xiaocdeh',
+    categories: [
+        {
+            key: 0,
+            name: 'diy',
+        },
+    ],
+    globalGroups: [
+        {
+            key: 0,
+            name: 'diy',
+            order: -10,
+            matchTime: 10000,
+            actionMaximum: 2,
+            resetMatch: 'app',
+            actionCdKey: 0,
+            actionMaximumKey: 0,
+            enable: false,
+            rules: [
+            ],
+            apps: [
+            ],
+        },
+    ],
+    apps: [
+        {
+            id: 'com.xiaomi.market',
+            name: '应用商店',
+            groups: [
+                {
+                    key: 0,
+                    name: 'i权限禁用提醒-读取APP列表',
+                    desc: 'i关闭读取APP列表',
+                    rules: [
+                        
+                        {
+                            activityIds:['com.xiaomi.market'],
+                            matches: '[id="android:id/button2"]',
+                        },
+                    ],
+                    enable: true,
+                },
+            ],
+        },
+        {
+            id: 'com.zhihu.android',
+            name: '知乎',
+            groups: [
+                {
+                    key: 0,
+                    name: 'i全屏弹窗-登录弹窗',
+                    desc: 'i登录弹窗',
+                    rules: [
+                        
+                        {
+                            activityIds:['com.zhihu.android.app.ui.activity.SocialOauthActivity'],
+                            matches: '[id="com.zhihu.android:id/ivBack"]',
+                        },
+                    ],
+                    enable: true,
+                },
+            ],
+        },
+        {
+            id: 'com.mfcloudcalculate.networkdisk',
+            name: '123云盘',
+            groups: [
+                {
+                    key: 0,
+                    name: 'i全屏弹窗-广告弹窗',
+                    desc: 'i广告弹窗',
+                    rules: [
+                        
+                        {
+                            activityIds:['com.meishu.sdk.activity.SdkInterstitialActivity'],
+                            matches: '[id="com.mfcloudcalculate.networkdisk:id/ms_activity_sdk_interstitial_cacel"]',
+                        },
+                    ],
+                    enable: true,
+                },
+            ],
+        },
+    ],
+}
