@@ -96,6 +96,7 @@
                         
                         {
                             activityIds:['com.netease.mail.biz.main.MainITabActivity'],
+                            matchDelay:1500,
                             matches: '[id="com.netease.mail:id/anythink_myoffer_splash_skip"]',
                         },
                     ],
