@@ -84,5 +84,24 @@
                 },
             ],
         },
+        {
+            id: 'com.netease.mail',
+            name: '网易邮箱大师',
+            groups: [
+                {
+                    key: 0,
+                    name: 'i全屏弹窗-广告弹窗',
+                    desc: 'i广告弹窗',
+                    rules: [
+                        
+                        {
+                            activityIds:['com.netease.mail.biz.main.MainITabActivity'],
+                            matches: '[id="com.netease.mail:id/anythink_myoffer_splash_skip"]',
+                        },
+                    ],
+                    enable: true,
+                },
+            ],
+        },
     ],
 }
