@@ -96,7 +96,7 @@
                         
                         {
                             activityIds:['com.netease.mail.biz.main.MainITabActivity'],
-                            matches: '[text="跳过"]',
+                            matches: '[text="*跳过"]',
                         },
                     ],
                     enable: true,
